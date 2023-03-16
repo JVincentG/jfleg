@@ -1,0 +1,10 @@
+python ./eval/gleu.py -r ./dev/dev.ref0 ./dev/dev.ref1 ./dev/dev.ref2 ./dev/dev.ref3 -s ./dev/dev.src --hyp ./dev/test.txt
+
+python ./eval/gleu.py -r ./test/test.ref0 ./test/test.ref1 ./test/test.ref2 ./test/test.ref3 -s ./test/test.src --hyp ./dev/JFLEG_T5_Test.txt
+
+
+
+python ./eval/gleu.py -r ./test/test.ref0  -s ./test/test.src --hyp ./dev/Second_JFLEG_T5_Test.txt
+python ./eval/gleu.py -r ./test/ftest0.txt -s ./test/test.src --hyp ./dev/Second_JFLEG_T5_Test.txt
+
+python ./eval/gleu.py -r ./test/ftest0.txt ./test/ftest1.txt ./test/ftest2.txt ./test/ftest3.txt -s ./test/test.src --hyp ./dev/Second_JFLEG_T5_Test.txt
